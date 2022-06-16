@@ -1,0 +1,27 @@
+{
+    "native-path": " BAT0",
+    "vendor": " SMP",
+    "model": " LNV-45N1",
+    "serial": " 1707",
+    "power supply": " yes",
+    "updated": " Wed 15 Jun 2022 09:17:12 PM CEST (690 seconds ago)",
+    "has history": " yes",
+    "has statistics": " yes",
+    "battery": {
+        "present": " yes",
+        "rechargeable": " yes",
+        "state": " discharging",
+        "warning-level": " none",
+        "energy": " 30.2 Wh",
+        "energy-empty": " 0 Wh",
+        "energy-full": " 40.58 Wh",
+        "energy-full-design": " 47.52 Wh",
+        "energy-rate": " 0.597 W",
+        "voltage": " 11.495 V",
+        "charge-cycles": " N/A",
+        "time to empty": " 50.6 hours",
+        "percentage": " 74%",
+        "capacity": " 85.3956%",
+        "technology": " lithium-ion"
+    }
+}

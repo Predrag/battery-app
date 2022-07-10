@@ -28,6 +28,7 @@
             "builddir": true,
             "sources": [
                 {
+                    "branch": "main",
                     "type": "git",
                     "url": "https://github.com/Predrag/battery-app.git"
                 }

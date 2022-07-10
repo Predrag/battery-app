@@ -1,0 +1,38 @@
+{
+    "app-id": "org.flatpak.PythonApp",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "42",
+    "sdk": "org.gnome.Sdk",
+    "command": "main-run",
+    "finish-args": [
+        "--socket=wayland",
+        "--device=dri"
+    ],
+    "build-options": {
+        "env": {
+            "V": "1"
+        }
+    },
+    "cleanup": [
+        "/lib/pkgconfig",
+        "/man",
+        "/share/doc",
+        "/share/gtk-doc",
+        "/share/man",
+        "/share/pkgconfig"
+    ],
+    "modules": [
+        {
+            "name": "PythonApp",
+            "buildsystem": "meson",
+            "builddir": true,
+            "sources": [
+                {
+                    "type": "git",
+                    "path": "https://github.com/Predrag/battery-app.git"
+                }
+            ]
+        }
+    ]
+}
+

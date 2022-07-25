@@ -11,7 +11,8 @@
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",
-        "--talk-name=org.freedesktop.Notifications"
+        "--talk-name=org.freedesktop.Notifications",
+        "--filesystem=/usr/bin/upower"
     ],
     "build-options": {
         "env": {

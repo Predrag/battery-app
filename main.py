@@ -19,7 +19,7 @@ class MyWindow(Gtk.Window):
         self.add(self.button)
 
     def get_battery_life(self):
-        parameters = os.popen('upower -i /org/freedesktop/UPower/devices/battery_BAT0')
+        parameters = os.popen('/usr/bin/upower -i /org/freedesktop/UPower/devices/battery_BAT0')
         output = parameters.read()
         return output.lstrip().strip().replace("\n", '')
 

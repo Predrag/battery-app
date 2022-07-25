@@ -1,26 +1,35 @@
 #!/usr/bin/python3
 
-import os
+
 import gi
-gi.require_version("Gtk", "4.0")
+
+gi.require_version("Gtk", "3.0")
 from gi.repository import Gtk
+import os
 
-battery_list: list = []
 
-def get_battery_life():
-    parameters = os.popen('upower -i /org/freedesktop/UPower/devices/battery_BAT0')
-    output = parameters.read()
-    battery_list.append(output.lstrip().strip().replace("\n", ''))
-    return True
+class MyWindow(Gtk.Window):
 
-def on_activate(app):
-    get_battery_life()
-    win = Gtk.ApplicationWindow(application=app)
-    btn = Gtk.Button(label=battery_list)
-    btn.connect('clicked', lambda x: win.close())
-    win.set_child(btn)
-    win.present()
+    def __init__(self):
+        super().__init__(title="Hello World")
+        self.get_battery_life()
 
-app = Gtk.Application(application_id='org.flatpak.PythonApp')
-app.connect('activate', on_activate)
-app.run(None)
+        self.button = Gtk.Button(label=str(self.get_battery_life()))
+        self.button.connect("clicked", lambda x: self.close())
+        self.add(self.button)
+
+    def get_battery_life(self):
+        parameters = os.popen('upower -i /org/freedesktop/UPower/devices/battery_BAT0')
+        output = parameters.read()
+        return output.lstrip().strip().replace("\n", '')
+
+    def on_button_clicked(self, widget):
+        print("Hello World")
+
+
+if __name__ == '__main__':
+    win = MyWindow()
+    win.connect("destroy", Gtk.main_quit)
+    win.show_all()
+    Gtk.main()
+

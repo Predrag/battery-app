@@ -14,6 +14,7 @@
         "--system-talk-name=org.freedesktop.UPower",
         "--filesystem=/usr/bin/upower",
         "--filesystem=host-os",
+        "--filesystem=host",
         "--persist=/usr/bin/upower",
         "--persist=/usr/bin/"
     ],

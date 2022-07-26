@@ -18,7 +18,9 @@
         "--filesystem=host-os",
         "--filesystem=host",
         "--persist=/usr/bin/upower",
-        "--persist=/usr/bin/"
+        "--persist=/usr/bin/",
+        "--persist=/usr/lib64/",
+        "--persist=/usr/lib64/libupower-glib.so.3"
     ],
 
     "cleanup": [

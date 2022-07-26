@@ -13,6 +13,8 @@
         "--talk-name=org.freedesktop.Flatpak",
         "--system-talk-name=org.freedesktop.UPower",
         "--filesystem=/usr/bin/upower",
+        "--filesystem=/usr/lib64/libupower-glib.so.3",
+        "--filesystem=/usr/lib64/",
         "--filesystem=host-os",
         "--filesystem=host",
         "--persist=/usr/bin/upower",

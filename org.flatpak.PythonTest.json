@@ -9,6 +9,7 @@
         "--device=dri",
         "--talk-name=org.freedesktop.Flatpak",
         "--filesystem=/usr/bin/upower",
+        "--filesystem=/org/freedesktop/UPower/devices/battery_BAT0",
         "--filesystem=host",
         "--share=ipc"
     ],

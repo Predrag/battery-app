@@ -20,7 +20,7 @@ class MyWindow(Gtk.Window):
 
     def get_battery_life(self):
         # parameters = os.popen('/usr/bin/upower -i /org/freedesktop/UPower/devices/battery_BAT0')
-        parameters = subprocess.run('/usr/bin/upower -i /org/freedesktop/UPower/devices/battery_BAT0', stdout=subprocess.PIPE, shell=True)
+        parameters = subprocess.run('upower -i /org/freedesktop/UPower/devices/battery_BAT0', stdout=subprocess.PIPE, shell=True)
         # output = parameters.read()
         # return output.lstrip().strip().replace("\n", '')
         return parameters

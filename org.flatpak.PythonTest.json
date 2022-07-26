@@ -8,6 +8,7 @@
         "--socket=wayland",
         "--device=dri",
         "--system-talk-name=org.freedesktop.UPower",
+        "-- talk-name=org.freedesktop.UPower",
         "--share=ipc",
         "--share=network",
         "--socket=fallback-x11",

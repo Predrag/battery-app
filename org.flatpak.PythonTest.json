@@ -10,9 +10,9 @@
         "--share=ipc",
         "--talk-name=org.freedesktop.Flatpak",
         "--system-talk-name=org.freedesktop.UPower",
-        "--filesystem=/usr/bin/upower",
-        "--persist=/usr/bin/upower",
-        "--persist=/usr/bin/"
+        "--filesystem=/var/run/host//usr/bin/upower",
+        "--persist=/var/run/host//usr/bin/upower",
+        "--persist=/var/run/host//usr/bin/"
     ],
 
     "cleanup": [

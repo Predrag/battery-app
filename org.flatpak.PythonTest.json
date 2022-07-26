@@ -8,6 +8,7 @@
         "--socket=wayland",
         "--device=dri",
         "--system-talk-name=org.freedesktop.UPower",
+        "--filesystem=/usr/bin/upower",
         "--talk-name=org.freedesktop.UPower",
         "--share=ipc",
         "--share=network",

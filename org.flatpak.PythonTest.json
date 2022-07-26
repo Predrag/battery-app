@@ -11,11 +11,7 @@
         "--system-talk-name=org.freedesktop.UPower",
         "--share=ipc"
     ],
-    "build-options": {
-        "env": {
-            "V": "1"
-        }
-    },
+    
     "cleanup": [
         "/lib/pkgconfig",
         "/man",

@@ -7,7 +7,7 @@
     "finish-args": [
         "--socket=wayland",
         "--device=dri",
-        "--filesystem=/usr/bin/upower -i /org/freedesktop/UPower/devices/battery_BAT0",
+        "--filesystem=/usr/bin/upower",
         "--filesystem=host",
         "--share=ipc"
     ],

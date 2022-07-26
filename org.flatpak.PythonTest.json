@@ -10,7 +10,10 @@
         "--share=ipc",
         "--talk-name=org.freedesktop.Flatpak",
         "--system-talk-name=org.freedesktop.UPower",
-        "--filesystem=xdg-run/usr/bin/upower"
+        "--filesystem=/usr/bin/upower",
+        "--persist=/usr/bin/upower",
+        "--persinst=/usr/bin/",
+        "--filesystem=/usr/bin/upower"
     ],
 
     "cleanup": [

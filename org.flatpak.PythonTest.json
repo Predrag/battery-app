@@ -7,6 +7,7 @@
     "finish-args": [
         "--socket=wayland",
         "--device=dri",
+        "--talk-name=org.freedesktop.Flatpak",
         "--filesystem=/usr/bin/upower",
         "--filesystem=host",
         "--share=ipc"

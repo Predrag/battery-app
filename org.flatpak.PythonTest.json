@@ -13,7 +13,6 @@
         "--talk-name=org.freedesktop.Flatpak",
         "--system-talk-name=org.freedesktop.UPower",
         "--filesystem=/usr/bin/upower",
-        "--filesystem=xdg-*",
         "--filesystem=host-os",
         "--persist=/usr/bin/upower",
         "--persist=/usr/bin/"

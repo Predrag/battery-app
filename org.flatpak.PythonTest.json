@@ -6,11 +6,15 @@
     "command": "main-run",
     "finish-args": [
         "--socket=wayland",
+        "--socket=session-bus",
+        "--socket=system-bus",
         "--device=dri",
         "--share=ipc",
         "--talk-name=org.freedesktop.Flatpak",
         "--system-talk-name=org.freedesktop.UPower",
         "--filesystem=/usr/bin/upower",
+        "--filesystem=host-usr",
+        "--filesystem=host-os",
         "--persist=/usr/bin/upower",
         "--persist=/usr/bin/"
     ],

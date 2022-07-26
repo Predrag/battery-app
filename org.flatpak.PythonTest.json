@@ -9,7 +9,8 @@
         "--device=dri",
         "--share=ipc",
         "--talk-name=org.freedesktop.Flatpak",
-        "--system-talk-name=org.freedesktop.UPower"
+        "--system-talk-name=org.freedesktop.UPower",
+        "--filesystem=xdg-run/usr/bin/upower"
     ],
 
     "cleanup": [
